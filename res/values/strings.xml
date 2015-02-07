@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simple App Lock</string>
+    <string name="title_activity_lock">Simple App Lock</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add">ADD APPS</string>
+    <string name="title_activity_out_going_call">OutGoingCall</string>
+    <string name="title_activity_outgoing_call_receiver">OutgoingCallReceiver</string>
+    <string name="title_activity_pinlock">Pinlock</string>
+    <string name="title_activity_kill_app">KillApp</string>
+    <string name="title_activity_unlocked_apps">UnlockedApps</string>
+    <string name="title_activity_unlock__apps">Unlock_Apps</string>
+    <string name="title_activity_listapp">Listapp</string>
+    <string name="title_activity_tab_app_list">AppList</string>
+    <string name="Lock">L \n o \n c \n k \n / \n U \n n \n l \n o \n c \n k \n A p p s</string>
+    <string name="title_activity_unhide">Unhide</string>
+    <string name="title_activity_main_ps">Simple PS Lock</string>
+    <string name="FakeName">System Service</string>
+
+</resources>

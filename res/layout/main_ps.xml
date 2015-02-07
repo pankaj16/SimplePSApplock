@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Lock" >
+
+    <EditText
+        android:id="@+id/edtPassMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:digits="1234567890"
+        android:ems="10"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:password="true" />
+
+    <TextView
+        android:id="@+id/txtvwDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edtPassMain"
+        android:layout_alignLeft="@+id/edtPassMain"
+        android:layout_marginBottom="61dp"
+        android:text="Default Password is: 333333" />
+
+    <Button
+        android:id="@+id/btnCloseMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPassMain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="btnCloseMain_Click"
+        android:text="Exit" />
+
+    <Button
+        android:id="@+id/btnPassMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPassMain"
+        android:layout_alignRight="@+id/edtPassMain"
+        android:layout_centerVertical="true"
+        android:onClick="btnPassMain_Click"
+        android:text="Enter" />
+
+</RelativeLayout>

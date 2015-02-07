@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.78" >
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="0dp"
+            android:layout_y="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="HOME" >
+ 
+                            <ScrollView
+       								 android:id="@+id/scrollView1"
+        							 android:layout_width="fill_parent"
+        							android:layout_height="wrap_content" >
+
+
+        					<LinearLayout
+        							android:id="@+id/Layout1"
+       								 android:layout_width="match_parent"
+        							android:layout_height="wrap_content"
+        							android:orientation="vertical" >           					
+
+    						</LinearLayout>
+   							 </ScrollView>
+                    
+                        </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="HOME" >
+ 
+                        <ScrollView
+       								 android:id="@+id/scrollView1"
+        							 android:layout_width="fill_parent"
+        							android:layout_height="wrap_content" >
+                        
+                            <RelativeLayout
+                                android:id="@+id/Layout2"
+       								 android:layout_width="match_parent"
+        							android:layout_height="wrap_content" >
+                                <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/edtNewPass"
+        android:layout_marginTop="26dp"
+        android:text="Repeat Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnChange"
+        android:layout_alignBottom="@+id/btnChange"
+        android:layout_alignRight="@+id/edtRepeat"
+        android:layout_toRightOf="@+id/textView3"
+        android:onClick="btnCancel_Click"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCurrentPass"
+        android:layout_alignParentTop="true"
+        android:text="Current Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edtCurrentPass"
+        android:inputType="phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:maxLength="6"
+        android:hint="Current Password"
+        android:password="true"
+        android:digits="1234567890" />
+
+    <EditText
+        android:id="@+id/edtRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/edtNewPass"
+        android:layout_below="@+id/textView3"
+        android:ems="10"
+        android:hint="Repeat Password" 
+        android:maxLength="6"
+        android:inputType="phone"
+        android:password="true"
+        android:digits="1234567890"/>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtNewPass"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/edtRepeat"
+        android:layout_marginTop="28dp"
+        android:onClick="btnChange_Click"
+        android:text="Change" />
+
+    <EditText
+        android:id="@+id/edtNewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCurrentPass"
+        android:layout_alignRight="@+id/edtCurrentPass"
+        android:layout_below="@+id/edtCurrentPass"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:password="true"
+        android:digits="1234567890" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/edtCurrentPass"
+        android:layout_marginTop="22dp"
+        android:text="New Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+                            </RelativeLayout>
+                     </ScrollView>
+                        </LinearLayout>
+                       
+                      <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="HOME" >
+ 						
+                          <ScrollView
+       								 android:id="@+id/scrollView3"
+        							 android:layout_width="fill_parent"
+        							android:layout_height="wrap_content" >
+                            <RelativeLayout
+                                android:id="@+id/Layout3"
+       								 android:layout_width="match_parent"
+        							android:layout_height="wrap_content"  >
+                       <Button
+        android:id="@+id/btnHideApp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:text="Hide Icon" 
+        android:onClick="btnHideApp_click"/>
+        				 
+                       <Button
+        android:id="@+id/btnUnHideApp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="80dp"
+        android:text="UnHide Icon" 
+        			    android:onClick="btnUnHideApp_click"	 />
+                       
+                       
+           <TextView 
+                android:id="@+id/txtInfo"
+                android:layout_marginTop="180dp"
+                android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"  
+        		android:text="Use Phone Dialer to open App when using hiding option.\n The Default Password is: 333333"          />
+              
+                   </RelativeLayout>
+                       </ScrollView>
+                       
+                        </LinearLayout>
+               
+                 </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </AbsoluteLayout>
+</LinearLayout>
